@@ -5,9 +5,12 @@ public:
         unordered_set<int> seen;
 
         // iterate throufht the elemenets in the arrat
-        for(int num: nums)
+        // for(int num: nums)
+        for(int i=0; i<nums.size(); i++)
+      
         {
             // if the current elemt in seen true kardo
+               int num = nums[i];
             if(seen.count(num))
             {
                 return true;
