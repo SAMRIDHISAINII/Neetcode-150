@@ -12,7 +12,7 @@ class Trie {
   TrieNode* root;
 
  public:
-  /** Initialize your data structure here. */
+ 
   Trie() : root(new TrieNode()) {}
 
   /** Inserts a word into the trie. */
@@ -40,6 +40,7 @@ class Trie {
   }
 
   /** Returns if there is any word in the trie that starts with the given prefix. */
+ 
   bool startsWith(string prefix) {
     TrieNode* curr = root;
     for (char c : prefix) {
