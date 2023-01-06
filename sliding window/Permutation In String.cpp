@@ -10,6 +10,7 @@ m.resize(26, 0);
             int lastChar = s2[e] - 'a';
             if (m[lastChar] <= 0) {
                 while (s < e && s2[s] - 'a' != lastChar) {
+                    
                     m[s2[s++] - 'a']++;
                 }
                 s++;
